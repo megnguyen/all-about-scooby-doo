@@ -26,6 +26,9 @@
       top: 0;
       left: 0;
       background: #333333;
+      transform: translateX(-350px); 
+      transition: transform 0.2s;
+      overflow: hidden;
     }
     
     .nav-close {
@@ -37,8 +40,16 @@
       padding: 15px 25px;
       color: #dddddd;
       cursor: pointer;
-      transform: translateX(-350px); 
-      transition: transform 0.2s;
+    }
+    
+    .nav-links-container {
+      box-shadow: 0 -10px 10px rgba)0, 0, 0, 0,15);
+    }      
+    
+    .nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     
     .main {
@@ -46,7 +57,7 @@
     }
   </style> 
 </head>
-<body>
+<body class="nav-open">
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <nav class="nav">
     <button type="button" "class=nav-close"></button>
