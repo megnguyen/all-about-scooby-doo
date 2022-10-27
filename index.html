@@ -5,13 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ScoobyDoo</title>
+  <style>
+    body { 
+      margin: 0;
+      overflow-x: hidden;
+    }
+    
+    .nav {
+      width: 350px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #333333
+    }
+  </style> 
 </head>
 <body>
   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   <nav class="nav">
     <button type="button" "class=nav-close"></button>
     <ion-icon name="close-circle-outline" size="large"></ion-icon>
+    <div class="nav-links-container">
+      <a href="#" class="nav-link">
+        <span class="nav-text">products</span>
+        <ion-icon name="paw"></ion-icon>
+      </a>
+    </div>
+    <div class="nav-links-container">
+      <a href="#" class="nav-link">
+        <span class="nav-text">location</span>
+        <ion-icon name="paw"></ion-icon>
+      </a>
+    </div>
+    <div class="nav-links-container">
+      <a href="#" class="nav-link">
+        <span class="nav-text">contact</span>
+        <ion-icon name="paw"></ion-icon>
+      </a>
+    </div>
+      <div class="nav-links-container">
+      <a href="#" class="nav-link">
+        <span class="nav-text">get to know me</span>
+        <ion-icon name="paw"></ion-icon>
+      </a>
+    </div>
+  
   </nav>
+ 
   
   <main class="main">
     content goes inside here 
