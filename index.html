@@ -40,6 +40,10 @@
       transform: translateX(-350px); 
       transition: transform 0.2s;
     }
+    
+    .main {
+      transition: transform 0.2s;
+    }
   </style> 
 </head>
 <body>
@@ -76,13 +80,17 @@
  
   
   <main class="main">
-    <button type="button>Open Navigation</button>
+    <button type="button" onclick="toggleNav">Open Navigation</button>
   </main>
                   
   <script>
     function toggleNav() {
       document.body.classList.toggle("nav-open");
     }
+    
+    document.querySelector(".nav-close").addEventListener("click", () => {
+      toggleNav();
+    });
   </script> 
   <h1><b>All About Scooby Doo</b></h1>
   <h2><i>"Scooby Dooby Doo, where are you? We got some work to do now! Scooby Dooby Doo, where are you? We need some help from you now!"</i></h2>
