@@ -11,6 +11,14 @@
       overflow-x: hidden;
     }
     
+    .nav-open .nav {
+      transform: translateX(0);
+    }
+    
+    .nav-open .main {
+      transform: translateX(350);
+    }
+    
     .nav {
       width: 350px;
       height: 100vh;
@@ -30,6 +38,7 @@
       color: #dddddd;
       cursor: pointer;
       transform: translateX(-350px); 
+      transition: transform 0.2s;
     }
   </style> 
 </head>
@@ -67,8 +76,14 @@
  
   
   <main class="main">
-    content goes inside here 
+    <button type="button>Open Navigation</button>
   </main>
+                  
+  <script>
+    function toggleNav() {
+      document.body.classList.toggle("nav-open");
+    }
+  </script> 
   <h1><b>All About Scooby Doo</b></h1>
   <h2><i>"Scooby Dooby Doo, where are you? We got some work to do now! Scooby Dooby Doo, where are you? We need some help from you now!"</i></h2>
   <h3>Fun Facts:</h3>
